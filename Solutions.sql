@@ -1,4 +1,4 @@
--- Monday Coffee -- Data Analysis 
+-- Coffee -- Data Analysis 
 
 SELECT * FROM city;
 SELECT * FROM products;
@@ -38,9 +38,9 @@ WHERE
 SELECT 
 	ci.city_name,
 	SUM(s.total) as total_revenue
-FROM sales as s
+  FROM sales as s
 JOIN customers as c
-ON s.customer_id = c.customer_id
+  ON s.customer_id = c.customer_id
 JOIN city as ci
 ON ci.city_id = c.city_id
 WHERE 
